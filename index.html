@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Alumni+Sans+Pinstripe:ital@0;1&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DynaPuff:wght@400..700&family=Noto+Music&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <br>
+  <br>
+  <div class="container">
+    <h1>Memory Game</h1>
+    <p>A game to test out how good your memory is!</p>
+    <button class="reset-button">Reset Game</button>
+    <br>
+    <br>
+    <div class="scoreboard">
+      <p>Current Matches: <span id="current-score" class="score">0</span></p>
+      <p>Best Score: <span id="best-score">0</span></p>
+      <button class="reset-best-score-button" onclick="resetBestScore()">Reset Best Score</button>
+      <br>
+      <div id="congrats-message" class="hidden">Congratulations! You have a great memory of me!</div>
+      <br>
+
+    </div>
+    <div class="memory-game"></div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <p>© 2024 Brendan Dindial / Student ID: N01279862</p>
+  </footer>
+  <br>
+  <script src="script.js"></script>
+</body>
+</html>

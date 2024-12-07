@@ -1,0 +1,130 @@
+body {
+  font-family: "Press Start 2P", system-ui;
+  background-color: #000000;
+  color: #edf2f4;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #7373ee;
+}
+
+.memory-game {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0);
+  transition: transform 0.5s;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.card-front {
+  background: linear-gradient(135deg, #7373ee, #16213e, #6baeff);
+ }
+
+.card-back {
+  background-size: cover;
+  background-position: center;
+  transform: rotateY(180deg);
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #50adfa;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: bold;
+}
+
+.reset-button:hover {
+  background-color: #67b9fd;
+}
+
+.scoreboard {
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.scoreboard p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.score{
+  color: rgb(47, 255, 127);
+}
+
+.hidden {
+  display: none;
+}
+
+#congrats-message {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color:  #7373ee;
+}
+
+.reset-best-score-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fa5050;
+  color: #000;
+  cursor: pointer;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: bold;
+}
+
+.reset-best-score-button:hover {
+  background-color: #fd6767;
+}
+
+footer{
+  text-align: center;
+}
+
+footer p{
+  font-size: 0.5em;
+  font-weight: lighter;
+}
